@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Hero from "../../components/Hero";
 import API from "../../utils/api"
+import ArticleList from "../../components/Card"
 
 class Articles extends Component {
 
@@ -19,14 +20,15 @@ class Articles extends Component {
         }))
     }
     render(){
-        return(
-            <div>
-            <Hero/>
-            {this.state.articles.map(article => (
-                <h1>{article.author}</h1>
-            ))}
-            </div>
-        )
+        return <div>
+            <Hero />
+            {this.state.articles.map(article => <ArticleList
+                key={article.id}
+                title={article.title}
+                link={article.author}
+                >
+              </ArticleList>)}
+          </div>;
     }
 }
 
