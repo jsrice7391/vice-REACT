@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const uniqueValidator = require("mongoose-unique-validator");
+
 
 const articleSchema = new Schema(
   {
@@ -19,6 +21,7 @@ const articleSchema = new Schema(
   { timestamps: { createdAt: "created_at" }}
 );
 
+articleSchema.plugin(uniqueValidator);
 
 const Article = mongoose.model("Article", articleSchema);
 
