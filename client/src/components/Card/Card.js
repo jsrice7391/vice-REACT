@@ -3,7 +3,7 @@ import {Card, Col} from "react-materialize";
 
 
 const ArticleList = props => {
-    <Col m={6} s={12}>
+    <Col m={2} s={2}>
         <Card className="blue-grey darken-1" textClassName="white-text" title="Card title" actions={[<a href="/articles/">
               Reac the Article
             </a>]}>

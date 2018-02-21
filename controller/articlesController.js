@@ -1,4 +1,8 @@
 const db = require("../models");
+const request = require("request");
+
+const cheerio = require("cheerio");
+
 const getArticles = () => {
   // The beginning of the request from VICE
   request("https://www.vice.com/en_us", (err, response, body) => {
