@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Hero from "../../components/Hero";
 import API from "../../utils/api"
 import ArticleList from "../../components/Card"
-
+import List from "../../components/List"
 class Articles extends Component {
 
     state = {
@@ -22,12 +22,15 @@ class Articles extends Component {
     render(){
         return <div>
             <Hero />
-            {this.state.articles.map(article => <ArticleList
-                key={article.id}
-                title={article.title}
-                link={article.author}
-                >
-              </ArticleList>)}
+            <List>
+              {this.state.articles.map(article => (
+                <ArticleList
+                  key={article.id}
+                  title={article.title}
+                  link={article.author}
+                />
+              ))}
+            </List>
           </div>;
     }
 }
