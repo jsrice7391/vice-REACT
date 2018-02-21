@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Articles from "./pages/Articles"
 import ArticlePage from "./pages/Page"
 import NoMatch from "./pages/NoMatch"
-import API from "./utils/api.js";
 
 
 
@@ -16,8 +15,8 @@ const App = props =>
       <Header />
       <Switch>
         <Route exact path="/" component={Articles} />
-        <Route exact path="/books" component={Articles} />
-        <Route exact path="/books/:id" component={ArticlePage} />
+        <Route exact path="/articles" component={Articles} />
+        <Route exact path="/articles" component={ArticlePage} />
         <Route component={NoMatch} />
       </Switch>
     </div>

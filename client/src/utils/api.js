@@ -3,6 +3,6 @@ import axios from "axios";
 
 export default {
     getArticles: () => {
-        return axios.get("/articles")
+        return axios.get("/api/articles")
     }
 }

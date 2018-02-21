@@ -1,5 +1,5 @@
 {
-  "name": "react-scraper",
+  "name": "mern",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,9 +12,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "installDeps": "yarn && cd client && yarn"
   },
-  "keywords": [],
-  "author": "Justin Rice <jsrice7391@gmail.com>",
+  "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.11.0"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
@@ -24,10 +27,6 @@
     "mongoose": "^5.0.6",
     "mongoose-unique-validator": "^2.0.0",
     "morgan": "^1.9.0",
-    "nodemon": "^1.15.1",
     "react-materialize": "^1.1.2"
-  },
-  "devDependencies": {
-    "concurrently": "^3.5.1"
   }
 }

@@ -60,7 +60,7 @@ const getArticles = () => {
 module.exports = {
     getAll: (req, res) =>{
         console.log("IN THE ARTICLES SCRAPER")
-        db.Article.find({}).then((articles) => res.json(articles))
+        db.Article.find({}).then((articles) => res.json(articles)).catch(err => res.status(422).json(err));
     },
     scrapeForArticles: (req, res) =>{
         getArticles();

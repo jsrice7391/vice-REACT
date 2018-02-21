@@ -16,11 +16,8 @@ class Articles extends Component {
         API.getArticles().then(res =>
         this.setState({
             articles: res.data
-        }) )
+        }))
     }
-
-    
-
     render(){
         return(
             <div>
