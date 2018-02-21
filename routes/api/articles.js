@@ -2,7 +2,7 @@ const router = require("express").Router();
 const articlesController = require("../../controller/articlesController");
 
 // Matches with "/api/books"
-router.route("/scrape/all")
+router.route("/all")
     .get(articlesController.getAll);
 
 router.route("/articles/scrape")
