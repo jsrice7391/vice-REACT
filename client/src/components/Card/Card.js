@@ -1,6 +1,8 @@
 import React from "react";
 import {Card, Col} from "react-materialize";
+import {Link} from "react-router-dom";
 
+ 
 
 const ArticleList = props => {
     <Col m={2} s={2}>

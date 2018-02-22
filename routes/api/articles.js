@@ -9,6 +9,9 @@ router.route("/")
 router.route("/scrape")
     .get(articleController.scrapeForArticles)
 
+router.route("/:title")
+    .get(articleController.getOneArticle)
+
 
 
 

@@ -7,5 +7,8 @@ export default {
     },
     scrapeArticles: () => {
         return axios.get("/api/articles/scrape")
+    },
+    getOneArticle: (title) => {
+        return axios.get("/api/articles/" + title)
     }
 }

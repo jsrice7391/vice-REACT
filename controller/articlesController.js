@@ -51,6 +51,7 @@ const getArticles = () => {
           })
             .then(function(result) {
               console.log(result);
+              res.json(result)
             })
             .catch(function() {
               console.log("Something went wrong");
@@ -69,5 +70,8 @@ module.exports = {
     scrapeForArticles: (req, res) =>{
         getArticles();
         res.send("Articles Scraped")
+    },
+    getOneArticle: (req, res) => {
+      db.Article.find({title: req.params.title}).then(articles => res.json(articles)).catch(err =>res.status(422).json(err))
     }
 }
