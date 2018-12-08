@@ -26,8 +26,8 @@
     "mongodb": "^3.0.2",
     "mongoose": "^5.0.6",
     "mongoose-unique-validator": "^2.0.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "react-materialize": "^1.1.2",
-    "request": "^2.83.0"
+    "request": "^2.84.0"
   }
 }
