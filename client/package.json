@@ -5,8 +5,8 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router": "^6.0.0",
-    "react-router-dom": "^6.0.0",
+    "react-router": "^6.4.0",
+    "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.0"
   },
   "scripts": {
